@@ -7,7 +7,7 @@ import react from "../../public/react_logo.png";
 
 const Header = () => {
   return (
-    <div className="w-full flex flex">
+    <div className="w-full flex">
       <div
         className="w-1/2 flex 
       pt-24 flex-col"
