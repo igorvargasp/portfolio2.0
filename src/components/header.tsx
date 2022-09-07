@@ -60,10 +60,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 flex relative lg:justify-center md:justify-center md:pt-18 lg:pt-1 animate__animated animate__fadeInRight ">
+      <div className="w-1/2 flex relative lg:justify-center md:justify-center md:pt-18 lg:pt-0 animate__animated animate__fadeInRight ">
         <Image
           src={headerImage}
-          className="lg:w-4/5 lg:h-5/5 md:w-5/5 md:h-5/5"
+          className="lg:w-4/5 lg:h-5/5 md:w-4/5 md:h-5/5"
         />
         <div className="flex absolute rounded-full lg:right-3/4 animate-pulse md:right-3/4">
           <Image
