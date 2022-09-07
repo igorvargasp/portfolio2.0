@@ -5,8 +5,10 @@ import NavBar from "../src/components/navbar";
 const Home: NextPage = () => {
   return (
     <div className="w-full">
-      <NavBar />
-      <Header />
+      <div className="w-screen h-screen">
+        <NavBar />
+        <Header />
+      </div>
     </div>
   );
 };

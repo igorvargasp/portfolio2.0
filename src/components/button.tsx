@@ -8,7 +8,7 @@ const Button = () => {
       items-center
       justify-center 
       font-bold hover:bg-blue-900
-      cursor-pointer md:w-28 md:h-6"
+      cursor-pointer md:w-28 md:h-6 hover:scale-110"
     >
       Contact
     </button>

@@ -4,13 +4,14 @@ import docker from "../../public/docker_logo.png";
 import kubernets from "../../public/kubernets_logo.png";
 import nodeJs from "../../public/nodeJs_logo.png";
 import react from "../../public/react_logo.png";
+import "animate.css";
 
 const Header = () => {
   return (
-    <div className="w-full flex border-b-2 h-screen">
+    <div className="w-scren flex">
       <div
         className="w-1/2 flex 
-      lg:pt-24 flex-col md:pt-20"
+      lg:pt-24 flex-col md:pt-20 animate__animated animate__fadeInLeft  h-3/6"
       >
         <div
           className="tracking-widest font-bold 
@@ -52,26 +53,41 @@ const Header = () => {
              w-full h-12 
              justify-center 
              items-center
-              text-white flex"
+              text-white flex hover:scale-110"
             >
               DOWNLOAD CV
             </button>
           </div>
         </div>
       </div>
-      <div className="w-1/2 flex relative justify-center">
-        <Image src={headerImage} className="lg:w-3/5 lg:h-3/5" />
-        <div className="flex absolute rounded-full lg:right-3/4 animate-pulse">
-          <Image src={react} width="101" height="101" />
+      <div className="w-1/2 flex relative lg:justify-center md:justify-center md:pt-18 lg:pt-1 animate__animated animate__fadeInRight ">
+        <Image
+          src={headerImage}
+          className="lg:w-4/5 lg:h-5/5 md:w-5/5 md:h-5/5"
+        />
+        <div className="flex absolute rounded-full lg:right-3/4 animate-pulse md:right-3/4">
+          <Image
+            src={react}
+            className="lg:w-24 md:w-16 animate__animated animate__bounce"
+          />
         </div>
-        <div className="flex absolute rounded-full lg:top-80 lg:left-20 animate-pulse">
-          <Image src={nodeJs} width="101" height="101" />
+        <div className="flex absolute rounded-full lg:top-80 lg:left-18 animate-pulse md:left-1 md:top-80">
+          <Image
+            src={nodeJs}
+            className="lg:w-24 md:w-16 animate__animated animate__bounce"
+          />
         </div>
-        <div className="flex absolute rounded-full  lg:top-2/4 lg:right-2/4 animate-pulse">
-          <Image src={docker} width="160" height="101" />
+        <div className="flex absolute rounded-full  lg:top-3/4 lg:right-2/4 md:top-96 md:right-70 animate-pulse">
+          <Image
+            src={docker}
+            className="lg:w-56 md:w-36 animate__animated animate__bounce"
+          />
         </div>
-        <div className="flex absolute rounded-full  lg:top-96 lg:right-40 animate-pulse">
-          <Image src={kubernets} width="101" height="101" />
+        <div className="flex absolute rounded-full  lg:top-2/3 lg:right-40 md:top-72 md:right-5 animate-pulse">
+          <Image
+            src={kubernets}
+            className="lg:w-24 md:w-16 animate__animated animate__bounce"
+          />
         </div>
       </div>
     </div>

@@ -10,9 +10,9 @@ const NavBar = () => {
       </div>
 
       <div className="lg:w-1/2 gap-20 flex lg:text-lg md:w-3/4 font-roboto pt-10 font-medium md:text-sm border-black align-middle justify-center">
-        <span className="cursor-pointer">Home</span>
-        <span className="cursor-pointer">Experience</span>
-        <span className="cursor-pointer">Projects</span>
+        <span className="cursor-pointer hover:scale-105">Home</span>
+        <span className="cursor-pointer hover:scale-105">Experience</span>
+        <span className="cursor-pointer hover:scale-105">Projects</span>
         <Button />
       </div>
     </div>
