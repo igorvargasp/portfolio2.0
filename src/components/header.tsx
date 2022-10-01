@@ -5,6 +5,7 @@ import kubernets from "../../public/kubernets_logo.png";
 import nodeJs from "../../public/nodeJs_logo.png";
 import react from "../../public/react_logo.png";
 import "animate.css";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -47,16 +48,23 @@ const Header = () => {
         </div>
         <div className="flex justify-center pt-10 pr-20">
           <div className="flex whitespace-nowrap lg:w-1/4 md:w-1/2">
-            <button
-              className="font-bold rounded-full
+            <Link
+              href="https://drive.google.com/file/d/1f81B126oIN7SU4_68LSoDpQVgoz4h3FZ/view"
+              target="_blank"
+              rel="noopener"
+            >
+              <button
+                className="font-bold rounded-full
              bg-blue-600 
              w-full h-12 
              justify-center 
              items-center
+             hover:bg-blue-900
               text-white flex hover:scale-110"
-            >
-              DOWNLOAD CV
-            </button>
+              >
+                DOWNLOAD CV
+              </button>
+            </Link>
           </div>
         </div>
       </div>
