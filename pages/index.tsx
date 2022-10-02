@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Contact from "../src/components/contact";
 import Experience from "../src/components/experience";
 import Header from "../src/components/header";
 import NavBar from "../src/components/navbar";
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       </div>
       <Experience />
       <Project />
+      <Contact />
     </div>
   );
 };

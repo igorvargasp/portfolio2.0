@@ -9,7 +9,7 @@ const Project = () => {
   const [repo, setRepo] = useState<[]>([]);
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -23,7 +23,7 @@ const Project = () => {
     return (
       <div
         className={className}
-        style={{ ...style, background: "#2563eb" }}
+        style={{ ...style, paddingBottom: "7rem" }}
         onClick={onClick}
       />
     );
@@ -47,17 +47,17 @@ const Project = () => {
     <div className="flex flex-col w-full mt-60">
       <div className="flex w-full items-center justify-center">
         <div className="w-1/4">
-          <hr className="border-4" />
+          <hr className="border-4 rounded" />
         </div>
         <div className="w-1/4 justify-center flex text-4xl font-roboto font-bold text-blue-600 ">
           <h1>PROJECTS</h1>
         </div>
         <div className="w-1/4">
-          <hr className="border-4" />
+          <hr className="border-4 rounded" />
         </div>
       </div>
 
-      <div className="w-full  pt-40 flex items-center justify-center">
+      <div className="w-full  pt-60 flex items-center justify-center">
         <div className="w-3/4 ">
           <Slider {...settings}>
             {repo?.map((i: any) => (
