@@ -34,7 +34,6 @@ const Project = () => {
       const data = await axios.get(
         "https://api.github.com/users/igorvargasp/repos"
       );
-      console.log(data.data);
       if (!data) {
         return;
       }
@@ -61,7 +60,7 @@ const Project = () => {
         <div className="w-3/4 ">
           <Slider {...settings}>
             {repo?.map((i: any) => (
-              <div className="pl-14">
+              <div className="pl-14" key={i.full_name}>
                 <Link
                   href={i.html_url}
                   target={"_blank"}

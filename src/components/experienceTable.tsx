@@ -47,6 +47,7 @@ const ExperienceTable: React.FC<Data> = ({ year, logo, tech, link }) => {
       <div className="flex w-1/4 items-center justify-center">
         {tech?.map((i) => (
           <div
+            key={Math.random()}
             className={`rounded-full border-4 p-10  border-gray-200 hover:${i.color}  relative mr-3 cursor-pointer`}
           >
             <Link
