@@ -43,7 +43,7 @@ const Project = () => {
   }, []);
 
   return (
-    <div className="flex flex-col w-full mt-60">
+    <div className="flex flex-col w-full mt-60" id="projects">
       <div className="flex w-full items-center justify-center">
         <div className="w-1/4">
           <hr className="border-4 rounded" />

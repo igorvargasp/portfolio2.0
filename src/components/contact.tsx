@@ -51,7 +51,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex w-full mt-56 flex-col relative uppercase">
+    <div className="flex w-full mt-56 flex-col relative uppercase" id="contact">
       <div className="w-full flex">
         <div className="border-3 w-1/4 flex  justify-end ">
           <h2 className="uppercase font-bold text-blue-600 text-3xl pr-5">

@@ -15,7 +15,7 @@ import htmlLogo from "../../public/html-logo.png";
 
 const Experience = () => {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col" id="experience">
       <div className="flex row justify-center w-full pt-20 font-roboto font-bold gap-16 items-center ">
         <br />
         <h2 className="text-blue-600 text-5xl">EXPERIENCE</h2>
