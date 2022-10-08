@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="w-scren flex">
+    <div className="w-screen flex md:pt-20 lg:pt-0">
       <div
         className="w-1/2 flex 
       lg:pt-24 flex-col md:pt-20 animate__animated animate__fadeInLeft  h-3/6"
@@ -68,7 +68,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 flex relative lg:justify-center md:justify-center md:pt-18 lg:pt-0 animate__animated animate__fadeInRight ">
+      <div className="w-1/2 flex relative lg:justify-center md:justify-center md:pt-20 lg:pt-0 animate__animated animate__fadeInRight">
         <Image
           src={headerImage}
           className="lg:w-4/5 lg:h-5/5 md:w-4/5 md:h-5/5"
